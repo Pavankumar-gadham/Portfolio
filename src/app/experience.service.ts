@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
+
 
 export interface Experience {
   id: number;
@@ -15,7 +17,7 @@ export interface Experience {
 })
 export class ExperienceService {
 
-  private apiUrl = 'http://127.0.0.1:8000/myport/experience/';
+  private apiUrl = `${environment.apiUrl}/experience/`;
 
   constructor(private http: HttpClient) { }
 
