@@ -1,0 +1,67 @@
+
+.certi-wrapper {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-content: center;
+  }
+  
+  .certi-card {
+    background: linear-gradient(145deg, #1c1c1c, #232323);
+    border: 1px solid #0dcaf0;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1.5rem;
+    width: 280px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .certi-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 12px rgba(13, 202, 240, 0.6);
+  }
+  
+  .certi-ribbon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #0dcaf0;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0 1rem 0 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .certi-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #0dcaf0;
+  }
+  
+  .certi-issuer {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 0.75rem;
+  }
+  
+  .certi-link {
+    color: #fff;
+    background-color: #0dcaf0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .certi-link:hover {
+    background-color: #0bbad3;
+  }
+  
+  .certificate-container{
+    background: linear-gradient(to right, #0f172a, #1e293b);
+
+  }

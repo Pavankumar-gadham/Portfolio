@@ -1,0 +1,13 @@
+<div class="skills-container">
+  <h2>Technical Stack</h2>
+  <div class="skills-grid">
+    <div *ngFor="let skill of Skills" class="skill-card">
+      <img [src]="skill.icon" alt="{{ skill.skill_name }}" class="skill-icon" />
+      <h3>{{ skill.skill_name }}</h3>
+      <p>{{ skill.skill_level }}%</p>
+      <div class="progress-bar">
+        <div class="progress-fill" [style.width.%]="skill.skill_level"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="projects-container">
+  <h2 style="text-align: center; color:rgb(45, 172, 240)">Projects</h2>
+
+  <div class="project-card" *ngFor="let proj of Projects">
+    <h3 class="project-title">Project Title: {{ proj.title }}</h3>
+    <div class="project-description">
+      <ul>
+        <ng-container *ngFor="let point of proj.description.split('•')">
+          <li *ngIf="point.trim()">{{ point.trim() }}</li>
+        </ng-container>
+      </ul>
+    </div>
+    <p class="tech-stack"><strong>Tech Stack:</strong> {{ proj.tech_stack }}</p>
+  </div>
+</div>

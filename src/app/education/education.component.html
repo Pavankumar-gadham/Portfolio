@@ -1,0 +1,13 @@
+<div class="edu-container">
+  <div class="edu-wrapper">
+    <h2 style="text-align: center; color:rgb(45, 172, 240)">Education</h2>
+
+      <div class="edu-card" *ngFor="let edu of Education">
+        <h4 class="edu-title">{{ edu.institution }}</h4>
+        <p class="edu-duration">{{ edu.duration }}</p>
+        <p class="edu-qualification">{{ edu.qualification }}</p>
+      </div>
+    </div>
+</div>  
+
+  

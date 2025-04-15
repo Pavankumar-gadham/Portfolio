@@ -1,0 +1,57 @@
+.exp-container {
+  display: flex;
+  min-height: 100vh;
+
+  background: linear-gradient(to right, #0f172a, #1e293b);
+
+}
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    border-left: 3px solid #0dcaf0; /* Bootstrap's info color */
+    width: 75rem;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #0dcaf0;
+    border: 3px solid #222;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 4px solid #0dcaf0;
+    transition: transform 0.3s ease;
+  }
+  
+  .timeline-content:hover {
+    transform: scale(1.02);
+    background-color: #888c8b;
+  }
+  
+  .timeline-content ul {
+    padding-left: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .timeline-content li {
+    margin-bottom: 0.5rem;
+  }
+  

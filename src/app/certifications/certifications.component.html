@@ -1,0 +1,11 @@
+<div class="certificate-container">
+  <h2 style="text-align: center; color:rgb(45, 172, 240)">Certificates</h2>
+  <div class="certi-wrapper">
+      <div class="certi-card" *ngFor="let certi of Certificate">
+        <div class="certi-ribbon">✔</div>
+        <h4 class="certi-name">{{ certi.name }}</h4>
+        <p class="certi-issuer">Issued by: {{ certi.issuer }}</p>
+        <a class="certi-link" [href]="certi.link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+</div>    

@@ -1,0 +1,61 @@
+ .edu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
+ } 
+
+.edu-wrapper {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 2rem 1rem;
+  }
+  
+  .edu-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 transparent;
+    background-color: black;
+  }
+  
+  .edu-card:hover {
+    box-shadow: 0 0 15px rgba(13, 202, 240, 0.6);
+    transform: translateY(-5px) scale(1.02);
+  }
+  
+  .edu-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0dcaf0; 
+  }
+  
+  .edu-duration {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 0.25rem;
+  }
+  
+  .edu-qualification {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+
+  .edu-container{
+    background: linear-gradient(to right, #0f172a, #1e293b);
+
+  }  
+
+
+  

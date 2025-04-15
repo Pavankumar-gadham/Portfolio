@@ -1,0 +1,21 @@
+<div class="exp-container">
+    <div class="timeline">
+        <h2 style="text-align: center; color:rgb(45, 172, 240)">Experience</h2>
+
+        <div class="timeline-item" *ngFor="let expp of Experience">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content shadow">
+            <h5 class="text-info mb-1">{{ expp.company }}</h5>
+            <p class="mb-1"><strong>Role:</strong> {{ expp.role }}</p>
+            <p class="mb-2"><strong>Duration:</strong> {{ expp.duration }}</p>
+            <ul class="mb-0">
+            <ng-container *ngFor="let point of expp.description.split('•')">
+                <li *ngIf="point.trim()">{{ point.trim() }}</li>
+            </ng-container>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+    
+  
